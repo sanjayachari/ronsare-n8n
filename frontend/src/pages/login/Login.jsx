@@ -23,7 +23,7 @@ export default function Login() {
   try {
     const response = await axios.post(
       // "http://localhost:8000/api/v1/login",
-      PROD_API,
+      `${PROD_API}/login`,
       formData,
       {
         withCredentials: true // ⬅️ This is critical to accept cookies from server

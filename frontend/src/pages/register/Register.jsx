@@ -22,7 +22,7 @@ export default function Register() {
     try {
       const response = await axios.post(
         // "http://localhost:8000/api/v1/register",
-        PROD_API,
+        `${PROD_API}/register`,
          formData)
       console.log('response',response)
       if (response.status === 201) {
